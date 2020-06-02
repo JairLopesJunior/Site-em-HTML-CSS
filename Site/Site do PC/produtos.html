@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+    <meta charset="utf-8">
+    <!--Links Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity=sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Links Materialize-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+    <!-- Link fonte -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--ANIMAÇÃO-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	</head>
+	<body>
+
+     <!--NAVBAR-->
+    <div class="navbar-fixed">
+    <nav style="background-color: grey;height: 70px;">
+        <div class="nav-wrapper" data-aos="flip-left">
+            <a href="#" class="brand-logo">
+              <img id="imglogo" src="logo.png">
+            </a>
+            <a href="#" data-activates="menu-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li class="nav-item">
+                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contato
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="contato.html">Fale conosco</a>
+                    <a class="dropdown-item" href="curriculo.html">Trabalhe conosco</a>
+                    <a class="dropdown-item" href="fornecedor.html">Seja nosso fornecedor</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cliente.html">Parceiros</a>
+                </li>
+                <li class="nav-icon active" id="rover_icon">
+                  <a class="#">                    
+                      <img class="nav-icon" id="traduzir" src="imagens/logo-brasil.png">
+                    </a>                    
+                </li>
+                <li class="nav-icon">
+                    <a href="produtos-ing.html">
+                      <img id="traduzir" src="imagens/us.png">
+                    </a>
+                </li>
+            </ul> 
+        </div>
+    </nav></div>
+
+    <!--Carrossel do Site-->
+    <div id="myCarousel" class="carousel slide" data-aos="zoom-in" data-ride="carousel" style="position: relative;bottom: 20px;height:550px;">
+      <div class="carousel-inner">
+        <div class="active item">
+          <img width="100%;" src="imagens/f1.jpg">
+        </div>
+
+        <div class="item">
+          <img width="100%;" src="imagens/f2.jpg">
+        </div>
+
+        <div class="item">
+          <img width="100%;" src="imagens/f3.jpg">
+        </div>
+      </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a> 
+  </div>
+
+    <!--Painéis Eletricos-->
+    <div class="projeto1" class="container">
+      <div class="row">
+        <div class="col s12">
+          <p id="painel" data-aos="fade-up"><br>Painéis Eletricos</p>
+        </div>
+      </div>
+      <div class="row">
+        <div id="text_painel" class="col s12 m6 l4" data-aos="fade-right"><p><h4 style="text-align: center;">Orçamento</h4>
+        Realizamos orçamentos precisos, desenvolvemos layouts, adequações de paineis existentes, fornecemos quadros de sobrepor e painéis autoportantes. Nossos painéis atendem as normas mais exigentes. Realizamos testes em fabrica e certificamos o total funcionamento do painel e seus componentes.</p></div>
+        <div id="text_painel" class="col s12 m6 l4" data-aos="fade-down"><p><h4 style="text-align: center;">Desenvolvimento</h4>
+        Nossa engenharia de painéis trabalha para desenvolver projetos de alta qualidade, juntamente com uma mão de obra altamente capacitada, realizamos a montagem do painél em perfeita conformidade com as normas.</p></div>
+        <div class="col s12 m6 l47">
+          <img data-aos="fade-left" id="imagem_painel" width="80%;" src="imagens/peletrico.png">
+        </div>
+      </div>
+    </div>
+
+    <!--Robos Sinalizadores-->
+    <div class="projeto2" class="container">
+      <div class="row">
+        <div class="col s12">
+          <p id="painel" data-aos="fade-up"><br>Projetos</p>
+        </div>
+      </div>
+      <div class="row">
+       <div id="text_painel2" class="col s12 m6 l4" data-aos="fade-right"><p><h4 style="text-align: center;">Projeto</h4>Engenheiros eletricistas e projetistas desenvolvem projetos elétricos para sua empresa, desde instalações elétricas, até diagramas elétricos para paineis, respeitando todas as normas vigentes.</p></div>
+        <div id="text_painel2" class="col s12 m6 l4" data-aos="fade-down"><p><h4 style="text-align: center;">Desenvolvimento</h4>Visitamos as suas instalações, para adequações. Adequamos seus projetos para as normas atuais, realizamos calculos precisos para suas instalações.</p></div>
+        <div class="col s12 m6 l47">
+          <img data-aos="fade-left" id="imagem_painel2" width="90%;" height="80%;" src="imagens/f2.jpg">
+        </div>
+      </div>
+    </div>
+
+        <!--Robos Sinalizadores-->
+    <div class="projeto3" class="container">
+      <div class="row">
+        <div class="col s12">
+          <p id="painel" data-aos="fade-up"><br>Robôs Sinalizadores</p>
+        </div>
+      </div>
+      <div class="row">
+        <div id="text_painel2" class="col s12 m6 l4" data-aos="fade-right"><p><h4 style="text-align: center;">Projeto</h4>
+        Desenvolvemos robôs sinalizadores para utilização em rodovias, e em locais onde há risco à vida humana, nossos robôs funcionam com bateria que dura até 48 horas.</p></div>
+        <div id="text_painel2" class="col s12 m6 l4" data-aos="fade-down"><p><h4 style="text-align: center;">Montagem</h4>
+        Montamos e testamos nossos robôs para garantir o perfeito funcionamento, assim garantindo atender as espectativas de nossos clientes.</p></div>
+        <div class="col s12 m6 l47">
+          <img data-aos="fade-left" id="imagem_painel2" width="90%;" height="80%;" src="imagens/robos.jpg">
+        </div>
+      </div>
+    </div>
+
+    <!--Rodape do Site-->
+    <footer class="rodape" style="position: relative;bottom: 0px;">
+      <p style="text-align: center;position: relative;bottom: -55px; "><a href="#" id="zetatec">ZETTATACCK</a> &copy; - Todos os Direitos Reservados - 2018</p>
+    </footer>
+
+
+	</body>
+	<!--Scripts Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!--ANIMAÇÃO-->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+        duration: 2000,
+    })
+  </script>
+	<!--Scripts Materialize-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script>
+    $(function(){
+    $(".button-collapse").sideNav();
+    });
+  </script>
+  <script>
+    $( document ).ready(function)$(".dropdown-trigger").dropdown();
+  </script>
+</html>
