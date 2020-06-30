@@ -49,56 +49,90 @@
     .slick-current {
       opacity: 1;
     }
+    .carousel-control, .carousel-control:hover {
+      opacity: 0 !important;
+    }
   </style>
 	</head>
 	<body>
 
-    <!--NAVBAR-->
-    <div class="navbar-fixed">
-    <nav style="background-color: grey;height: 70px;">
-        <div class="nav-wrapper" data-aos="flip-left">
+     <!--NAVBAR-->
+    <nav style="height: 5.5em !important">
+        <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">
-              <img style="padding-left: 1.5em" src="imagens/logotipo.png" height="60" alt="Imagem do logotipo da Iottech" title="logotipo da Iottech">
+              <img style="padding-left: 1.5em" height="60" src="imagens/logotipo.png" alt="Imagem do logotipo da Iottech" title="logotipo da Iottech">
             </a>
-            <a href="#" data-activates="menu-mobile" class="button-collapse">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li class="nav-item active">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="nav-item active">
                   <a class="nav-link" href="cliente.html">Parceiros</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Produtos
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="paineisEletricos.html">Painéis Elétricos</a>
-                    <a class="dropdown-item" href="projetoEletrico.html">Projeto Elétrico</a>
-                    <a class="dropdown-item" href="roboSinalizador.html">Robô Sinalizador</a>
-                  </div>
-                </li>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Produtos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="paineisEletricos.html">Painéis Elétricos</a>
+            <a class="dropdown-item" href="projetoEletrico.html">Projeto Elétrico</a>
+            <a class="dropdown-item" href="roboSinalizador.html">Robô Sinalizador</a>
+          </div>
+        </li>
                 <li class="nav-item">
                    <a class="nav-link" href="fornecedor.html">Seja nosso fornecedor<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
                    <a class="nav-link" href="curriculo.html">Trabalhe conosco<span class="sr-only"></span></a>
-                </li>
+        </li>
                 <li class="nav-item">
                    <a class="nav-link" href="contato.html">Fale conosco<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-icon active" id="rover_icon">
-                	<a class="#">                    
-                    	<img class="nav-icon" id="traduzir" src="imagens/logo-brasil.png" alt="Imagem da bandeira do Brasil" title="Bandeira do brasil">
+                  <a class="#">                    
+                      <img class="nav-icon" id="traduzir" src="imagens/logo-brasil.png" alt="Imagem da bandeira do Brasil" title="Bandeira do brasil">
                     </a>                    
                 </li>
                 <li class="nav-icon">
                     <a href="index-ing.html">
-                    	<img id="traduzir" src="imagens/logo-USA.png" alt="Imagem da bandeira dos Estados Unidos" title="Bandeira dos Estados Unidos">
+                      <img id="traduzir" src="imagens/logo-USA.png" alt="Imagem da bandeira dos Estados Unidos" title="Bandeira dos Estados Unidos">
                     </a>
-                </li>                                              
-            </ul>
+                </li>
+      </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="nav-item active">
+                  <a class="nav-link" href="cliente.html">Parceiros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Produtos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="paineisEletricos.html">Painéis Elétricos</a>
+            <a class="dropdown-item" href="projetoEletrico.html">Projeto Elétrico</a>
+            <a class="dropdown-item" href="roboSinalizador.html">Robô Sinalizador</a>
+          </div>
+        </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="fornecedor.html">Seja nosso fornecedor<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="curriculo.html">Trabalhe conosco<span class="sr-only"></span></a>
+        </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="contato.html">Fale conosco<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-icon active" id="rover_icon">
+                  <a href="#">                    
+                      <img class="nav-icon" id="traduzir" src="imagens/logo-brasil.png" alt="Imagem da bandeira do Brasil" title="Bandeira do brasil">
+                    </a>                    
+                </li>
+                <li class="nav-icon">
+                    <a href="index-ing.html">
+                      <img id="traduzir" src="imagens/logo-USA.png" alt="Imagem da bandeira dos Estados Unidos" title="Bandeira dos Estados Unidos">
+                    </a>
+                </li>
+            </ul>   
         </div>
-    </nav></div>
+    </nav>
 
     <!--Carrossel do Site-->
     <div data-aos="zoom-in" id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative;bottom: 20px;height:550px;">
@@ -122,6 +156,7 @@
               <span class="glyphicon glyphicon-chevron-right"></span>
           </a> 
     </div>
+
 
     <!--Nossos Clientes--><br>
     <div class="fundo_carrossel">
@@ -194,4 +229,11 @@
       });
     });
 </script>
+  <!--Scripts Materialize-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+          $(".button-collapse").sideNav();
+
+    </script>
 </html>

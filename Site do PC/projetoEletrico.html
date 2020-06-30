@@ -19,6 +19,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--ANIMAÇÃO-->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+                <style type="text/css">
+          .carousel-control, .carousel-control:hover {
+      opacity: 0 !important;
+    }
+    </style>
 	</head>
 	<body>
 
@@ -70,27 +75,27 @@
     </nav></div>
 
     <!--Carrossel do Site-->
-	<div data-aos="zoom-in" id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative;bottom: 20px;height:550px;">
-        <div class="carousel-inner">
-          <div class="active item">
-            <img width="100%;" src="imagens/robo-sinalizador-na-rodovia.png.jpg" alt="Robô de sinalização usado nas rodovias" title="Robô de sinalização, que visa complementar a sinalização vertical e horizontal nas rodovias">
-          </div>
-  
-          <div class="item">
-            <img width="100%;" src="imagens/projeto-eletrico-2.jpg" alt="Plantas de design elétrico" title="Projetos desenvolvidos por nossos engenheiros e designers">
-          </div>
-  
-          <div class="item">
-            <img width="100%;" src="imagens/paineis-eletricos-1.jpg" alt="Painéis de controle e energia elétrica" title="Painéis de alta qualidade, desenvolvidos em perfeita conformidade com os padrões">
-          </div>
-        </div>
-          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative;bottom: 20px;height:550px;">
+    <div class="carousel-inner">
+      <div class="active item">
+        <img width="100%;" src="imagens/robo-sinalizador-na-rodovia.png.jpg" alt="Robô de sinalização usado nas rodovias" title="Robô de sinalização, que visa complementar a sinalização vertical e horizontal nas rodovias">
+      </div>
+
+      <div class="item">
+        <img width="100%;" src="imagens/projeto-eletrico-2.jpg" alt="Plantas de design elétrico" title="Projetos desenvolvidos por nossos engenheiros e designers">
+      </div>
+
+      <div class="item">
+        <img width="100%;" src="imagens/paineis-eletricos-1.jpg" alt="Painéis de controle e energia elétrica" title="Painéis de alta qualidade, desenvolvidos em perfeita conformidade com os padrões">
+      </div>
     </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a> 
+  </div>
 
     <!--Projeto Elétrico-->
     <div class="projeto2" class="container">

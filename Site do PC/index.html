@@ -19,20 +19,57 @@
     	<link rel="stylesheet" type="text/css" href="style.css">
         <!--ANIMAÇÃO-->
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+        <style type="text/css">
+        	.carousel-control, .carousel-control:hover {
+   opacity: 0 !important;
+}
+        </style>
 	</head>
 	<body>
 
-    <!--NAVBAR-->
-    <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper" data-aos="flip-left">
-            <a href="#" class="brand-logo">
+<!--NAVBAR-->
+    <nav style="height: 5.5em !important">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
               <img style="padding-left: 1.5em" height="60" src="imagens/logotipo.png" alt="Imagem do logotipo da Iottech" title="logotipo da Iottech">
             </a>
-            <a href="#" data-activates="menu-mobile" class="button-collapse">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="nav-item">
+                  <a class="nav-link" href="cliente.html">Parceiros</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Produtos
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="paineisEletricos.html">Painéis Elétricos</a>
+					  <a class="dropdown-item" href="projetoEletrico.html">Projeto Elétrico</a>
+					  <a class="dropdown-item" href="roboSinalizador.html">Robô Sinalizador</a>
+					</div>
+				</li>
+                <li class="nav-item">
+                   <a class="nav-link" href="fornecedor.html">Seja nosso fornecedor<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="curriculo.html">Trabalhe conosco<span class="sr-only"></span></a>
+				</li>
+                <li class="nav-item">
+                   <a class="nav-link" href="contato.html">Fale conosco<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-icon active" id="rover_icon">
+                	<a class="index.html">                    
+                    	<img class="nav-icon" id="traduzir" src="imagens/logo-brasil.png" alt="Imagem da bandeira do Brasil" title="Bandeira do brasil">
+                    </a>                    
+                </li>
+                <li class="nav-icon">
+                    <a href="index-ing.html">
+                    	<img id="traduzir" src="imagens/logo-USA.png" alt="Imagem da bandeira dos Estados Unidos" title="Bandeira dos Estados Unidos">
+                    </a>
+                </li>
+      </ul>
+            <ul class="side-nav" id="mobile-demo">
                 <li class="nav-item">
                   <a class="nav-link" href="cliente.html">Parceiros</a>
 				</li>
@@ -67,10 +104,10 @@
                 </li>
             </ul>   
         </div>
-    </nav></div>
+    </nav>
 
     <!--Carrossel do Site-->
-	<div data-aos="zoom-in" id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative;bottom: 20px;height:550px;">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative;bottom: 20px;height:550px;">
 	  <div class="carousel-inner">
 	    <div class="active item">
 	      <img width="100%;" src="imagens/robo-sinalizador-na-rodovia.png.jpg" alt="Robô de sinalização usado nas rodovias" title="Robô de sinalização, que visa complementar a sinalização vertical e horizontal nas rodovias">
@@ -161,7 +198,7 @@
 		        <ul class="list-unstyled">
 		          <li><p id="corfooter"><i class="fa fa-home mr-4"></i>Rua Francisco Luiz garcia n°172</p></li>
 		          <li><p id="corfooter"><i class="fa fa-home mr-4"></i>Araras - SP - Brasil</p></li>
-		          <li><p id="corfooter"><i class="fa fa-envelope mr-4"></i> zettatecck@zettatecck.com.br</p></li>
+		          <li><p id="corfooter"><i class="fa fa-envelope mr-4"></i> iottech@iottech.com.br</p></li>
 		          <li><p id="corfooter"><i class="fa fa-phone mr-4"></i> + 55 (19) 3321-8400</p></li>
 
 		        </ul>
@@ -181,7 +218,6 @@
 		  </div>
 	</footer>
   
-
 	</body>
 	<!--Scripts Bootstrap-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -197,4 +233,8 @@
 	<!--Scripts Materialize-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    	    $(".button-collapse").sideNav();
+
+    </script>
 </html>
